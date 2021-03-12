@@ -1,0 +1,28 @@
+
+/* ###########  APPLE  ########### */
+.tile-apple::after {
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "🍎";
+    transform: translate(1.5px, 2px);
+    font-size: 1.4rem;
+}
+
+.tile-pinapple::after {
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "🍍";
+    transform: translate(0px, 2px);
+    font-size: 1.4rem;
+}
+
+.tile-rice::after {
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "🍙";
+    transform: translate(2px, 2px);
+    font-size: 1.4rem;
+}

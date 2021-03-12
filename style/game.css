@@ -1,0 +1,103 @@
+
+:root {
+    --tile-size: 2rem;
+    --tile-color-1: rgb(148, 148, 148);
+    --tile-color-2: rgb(192, 192, 192);
+}
+
+.info {
+    border-radius: 10px 10px 0 0;
+    border-style: none;
+    background-color: rgb(1, 100, 9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4rem;
+    box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.11) inset;
+    /* box-shadow: 0px -2px 3px 0px rgb(255, 0, 0) inset; */
+}
+
+.apple, .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row:last-child > :last-child  {
+    border-radius: 0 0 10px 0;
+}
+
+.row:last-child > :first-child  {
+    border-radius: 0 0 0 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tile {
+    min-width: var(--tile-size);
+    min-height: var(--tile-size);
+    max-width: var(--tile-size);
+    max-height: var(--tile-size);
+}
+
+
+.odd {
+    background-color: var(--tile-color-2);
+}
+
+.even {
+    background-color: var(--tile-color-1);
+}
+
+.odd > .tile-color::after {
+    background-color: var(--tile-color-2);
+}
+
+.even > .tile-color::after {
+    background-color: var(--tile-color-1);
+}
+
+.game-over {
+    position: absolute;
+    height: calc(var(--tile-size) * 10 + 8rem);
+    width: calc(var(--tile-size) * 20);
+    padding-top: calc(var(--tile-size) * 10 - 8rem);
+    text-shadow:0px 5px 10px #333333;
+    font-size: 8rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.game-over.game-over-animation {
+    animation-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0,0.9,0,1);
+    animation-name: death;
+
+}
+
+@keyframes death {
+    from {
+        background-color:  rgba(255, 0, 0, 0.7);
+    }
+    to {
+        background-color:  rgba(255, 0, 0, 0);
+    }
+}

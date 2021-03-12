@@ -1,0 +1,160 @@
+
+@font-face {
+    font-family: "Transformer";
+    src: url("../font/Transformers.ttf")
+}
+
+.module-content {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parameter-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.select {
+    margin-top: 2rem;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.label-parameter {
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.button-parameter {
+    display: none;
+}
+
+/* -------------------------- SPEED -------------------------- */
+.label-speed {
+    font-family: Transformer;
+    border-color: #3498db;
+    background-color: #52a7e0;
+    font-size: 2.9rem;
+}
+
+.button-parameter:checked+.label-speed {
+    background-color: #3498db;
+}
+
+.label-speed:nth-child(2):after {
+    display: block;
+    transform: translate(15px, -6px);
+    content: ">"
+}
+
+.label-speed:nth-child(4):after {
+    display: block;
+    transform: translate(8px, -6px);
+    content: ">>"
+}
+.label-speed:nth-child(6):after {
+    display: block;
+    transform: translate(1px, -6px);
+    content: ">>>"
+}
+
+/* -------------------------- APPLE -------------------------- */
+.label-apple {
+    font-family: Transformer;
+    border-color: #c0af12;
+    background-color: #e0e03d;
+    font-size: 2rem;
+}
+
+.button-parameter:checked+.label-apple {
+    background-color: #c0af12;
+}
+
+.label-apple:nth-child(2):after {
+    display: block;
+    transform: translate(2px, 5px);
+    content: "🍎"
+}
+.label-apple:nth-child(4):after {
+    display: block;
+    transform: translate(-1px, 5px);
+    content: "🍍"
+}
+.label-apple:nth-child(6):after {
+    display: block;
+    transform: translate(2px, 5px);
+    content: "🍙"
+}
+
+
+/* -------------------------- SNAKE -------------------------- */
+.label-snake {
+    font-family: Transformer;
+    border-color: #2fb62f;
+    background-color: #59d459;
+    font-size: 2rem;
+}
+
+.button-parameter:checked+.label-snake {
+    background-color: #2fb62f;
+}
+
+.label-snake:nth-child(2):after {
+    display: block;
+    transform: translate(2px, 5px);
+    content: "🐍"
+}
+
+.label-snake:nth-child(4):after {
+    display: block;
+    transform: translate(2px, 5px);
+    content: "🦆"
+}
+.label-snake:nth-child(6):after {
+    display: block;
+    transform: translate(0px, 5px);
+    content: "🐞"
+}
+
+
+.center-play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-play {
+    margin-bottom: 3rem;
+    width: 12rem;
+    height: 5rem;
+    background-color: #f3663b;
+    border: 4px solid #e64922;
+    border-radius: 5px;
+    font-size: 4rem;
+    box-shadow: 0px 12px 0px 0px #c0392b;
+}
+
+.button-play:after {
+    display: block;
+    transform: translateY(-7px);
+    content: "Play"
+}
+
+.button-play:hover {
+    transform: translateY(1px);
+    box-shadow: 0px 11px 0px 0px #c0392b;
+}
+
+.button-play:active {
+    transform: translateY(7px);
+    box-shadow: 0px 5px 0px 0px #c0392b;
+}

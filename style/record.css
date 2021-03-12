@@ -1,0 +1,15 @@
+
+.list-record {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    overflow: auto;
+}
+
+
+.record {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px rgb(148, 148, 148);
+}
