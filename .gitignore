@@ -1,5 +1,6 @@
 /target
 /pkg
+/src/html
 .cargo-ok
 Cargo.lock
 Makefile.toml
