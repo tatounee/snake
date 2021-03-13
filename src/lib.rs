@@ -1,13 +1,8 @@
 // (Lines like the one below ignore selected Clippy rules
 //  - it's useful when you want to check your code with `cargo make verify`
 // but some rules are too "annoying" or are not applicable for your case.)
-#![allow(clippy::wildcard_imports)]
 
 #![feature(const_in_array_repeat_expressions)]
-
-#![allow(unused_must_use)]
-#![allow(unused_variables)]
-#![allow(dead_code)]
 
 mod parameter;
 mod snake;
@@ -191,7 +186,7 @@ fn view(model: &Model) -> Node<Msg> {
 
 
 
-fn parameter(model: &Model) -> Node<Msg> {
+fn parameter(_: &Model) -> Node<Msg> {
     div![
         C!["module"],
         div![
@@ -389,7 +384,7 @@ fn game(model: &Model) -> Node<Msg> {
     ]
 }
 
-fn record(model: &Model) -> Node<Msg> {
+fn record(_: &Model) -> Node<Msg> {
     div![
         C!["module"],
         div![
